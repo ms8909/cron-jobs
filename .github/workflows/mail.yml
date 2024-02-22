@@ -1,0 +1,15 @@
+name: Followup api cron job
+
+on:
+  schedule:
+    - cron: '*/1 * * * *'  # Runs every 5 minutes. Adjust this cron schedule to your needs.
+  workflow_dispatch:
+
+jobs:
+  trigger-drf-api:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Call DRF API Endpoint
+      run: |
+        curl -X POST https://ai-sales-backend.vercel.app/campaign_maker/api/check_and_send_followups/
