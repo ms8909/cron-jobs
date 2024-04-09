@@ -12,4 +12,4 @@ jobs:
     steps:
     - name: Call DRF API Endpoint
       run: |
-        curl -X POST https://ai-sales-backend.vercel.app/campaign_maker/api/check_and_send_followupssssss/
+        curl -X POST https://ai-sales-backend.vercel.app/campaign_maker/api/check_and_send_followups/
