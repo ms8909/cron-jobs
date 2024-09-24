@@ -15,5 +15,6 @@ jobs:
         curl -X POST https://ai-sales-backend.vercel.app/campaign_maker/api/check_and_send_followups/
         curl -X POST https://ai-sales-backend.vercel.app/campaign_maker/api/check_and_send_followups/
         curl -X GET https://ai-sales-backend.vercel.app/campaign_maker/api/send-scheduled-emails/
+        curl -X GET https://ai-sales-backend.vercel.app/campaign_maker/api/send-scheduled-linkedins/
 
 
