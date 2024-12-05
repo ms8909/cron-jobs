@@ -13,8 +13,5 @@ jobs:
     - name: Call DRF API Endpoint
       run: |
         curl -X POST https://ai-sales-backend.vercel.app/campaign_maker/api/check_and_send_followups/
-        sleep 5
-        echo "First followup complete"
-        curl -X POST https://ai-sales-backend.vercel.app/campaign_maker/api/check_and_send_followups/
         curl -X GET https://ai-sales-backend.vercel.app/campaign_maker/api/send-scheduled-emails/
         curl -X GET https://ai-sales-backend.vercel.app/campaign_maker/api/send-scheduled-linkedins/
